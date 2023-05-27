@@ -1,0 +1,9 @@
+services:
+  taskbox:
+    image: node:18
+    volumes:
+      - .:/app
+    ports:
+      - 6006:6006
+      - 4200:4200
+    command: tail -f /dev/null
